@@ -60,14 +60,45 @@ h1 {
 .bio p { margin: 0 0 .8em; }
 .bio .signoff { font-weight: bold; margin-top: 1.15em; }
 nav { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1rem; }
-a {
+nav a {
   color: var(--ink); background: var(--paper); padding: .95rem 1rem;
   text-decoration: none; display: inline-flex; align-items: center; gap: .8rem;
 }
-a:first-child { background: var(--signal); transform: rotate(-1.5deg); }
-a:last-child { transform: rotate(1deg); }
+nav a:first-child { background: var(--signal); transform: rotate(-1.5deg); }
+nav a:last-child { transform: rotate(1deg); }
 a:hover { text-decoration: underline; text-underline-offset: .2em; }
 a:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+.video-jump, .video-link {
+  display: inline-block;
+  color: var(--signal);
+  font-weight: bold;
+  text-underline-offset: .25em;
+}
+.music-video {
+  border-top: 1px solid #433b33;
+  background: #100f0e;
+  padding: clamp(2rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem);
+}
+.video-content { max-width: 60rem; margin-inline: auto; }
+.music-video h2 {
+  margin: 0 0 .25em;
+  font-size: clamp(1.75rem, 6vw, 4rem);
+  line-height: 1.05;
+}
+.video-caption { margin: 0 0 1.5rem; }
+.video-frame {
+  border-top: 3px solid var(--signal);
+  background: #000;
+  box-shadow: 0 1rem 2.5rem #0008;
+}
+.video-frame iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.video-link { margin-top: 1.25rem; }
 @media (min-width: 801px) and (min-aspect-ratio: 1/1) {
   .wall {
     display: grid;
