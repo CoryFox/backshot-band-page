@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#141210">
   <title>BACKSHOT | Sheffield Punk Band</title>
   <meta name="description" content="BACKSHOT are a punk band from Sheffield, UK. Follow the band for live announcements and get in touch about Sheffield gigs, UK shows and festivals.">
@@ -16,6 +17,7 @@
   <meta property="og:image:alt" content="Graffiti on a wall reading We are Backshot">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
+  <script src="video.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -66,20 +68,17 @@
     </div>
     <section class="music-video" id="lines-lines-lines" aria-labelledby="video-title">
       <div class="video-content">
-        <h2 id="video-title">Lines, Lines, Lines</h2>
-        <p class="video-caption">Live at Loft Space</p>
+        <header class="video-heading">
+          <p class="video-caption">Live at Loft Space</p>
+          <h2 id="video-title">Lines, Lines, Lines</h2>
+          <a class="video-link" href="https://www.youtube.com/watch?v=en6LguPJdzM">Watch on YouTube <span aria-hidden="true">↗</span></a>
+        </header>
         <div class="video-frame">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/en6LguPJdzM"
-            title="BACKSHOT — Lines, Lines, Lines"
-            width="560"
-            height="315"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="autoplay; encrypted-media; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+          <a class="video-poster" href="https://www.youtube.com/watch?v=en6LguPJdzM" data-video-id="en6LguPJdzM">
+            <img src="https://i.ytimg.com/vi/en6LguPJdzM/hqdefault.jpg" width="480" height="360" loading="lazy" alt="">
+            <span class="video-play"><span aria-hidden="true">▶</span> Play live video</span>
+          </a>
         </div>
-        <a class="video-link" href="https://www.youtube.com/watch?v=en6LguPJdzM">Watch on YouTube <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
