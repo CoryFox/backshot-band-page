@@ -1,0 +1,8 @@
+{
+  "name": "backshot-band-page",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node server.mjs"
+  }
+}

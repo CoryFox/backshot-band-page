@@ -11,13 +11,23 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_GB">
   <meta property="og:url" content="https://backshotband.co.uk/">
-  <meta property="og:title" content="BACKSHOT | Sheffield Punk Band">
-  <meta property="og:description" content="Punk from Sheffield, UK. Follow BACKSHOT for gig announcements and get in touch about UK shows and festivals.">
+  <meta property="og:title" content="BACKSHOT">
+  <meta property="og:description" content="BACKSHOT are a band from Sheffield, UK. Live video, gig news and bookings.">
   <meta property="og:image" content="https://backshotband.co.uk/assets/backshot-wall.jpg">
   <meta property="og:image:alt" content="Graffiti on a wall reading We are Backshot">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
   <script src="video.js" defer></script>
+  <script src="contact.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BACKSHOT",
+    "url": "https://backshotband.co.uk/",
+    "publisher": { "@id": "https://backshotband.co.uk/#band" }
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -46,7 +56,7 @@
       <article>
         <header>
           <h1>BACKSHOT</h1>
-          <p class="location">Punk band from Sheffield, UK</p>
+          <p class="location">Sheffield, UK</p>
         </header>
         <div class="bio">
           <p>Tragedy and depression, love and addiction.</p>
@@ -57,7 +67,7 @@
         <a class="video-jump" href="#lines-lines-lines">Watch Lines, Lines, Lines <span aria-hidden="true">↓</span></a>
         <section class="live" aria-labelledby="live-heading">
           <h2 id="live-heading">Gigs and bookings</h2>
-          <p>Follow us for new show announcements. For Sheffield gigs, shows elsewhere in the UK or festival bookings, message us on Instagram or Facebook.</p>
+          <p>Follow us for gig dates or <a href="#contact">get in touch about bookings</a>.</p>
           <nav aria-label="Find Backshot on social media">
             <a href="https://www.instagram.com/backshot_the_band/">Instagram <span aria-hidden="true">↗</span></a>
             <a href="https://www.facebook.com/people/Backshot/61592660761122/">Facebook <span aria-hidden="true">↗</span></a>
@@ -71,7 +81,7 @@
         <header class="video-heading">
           <p class="video-caption">Live at Loft Space</p>
           <h2 id="video-title">Lines, Lines, Lines</h2>
-          <a class="video-link" href="https://www.youtube.com/watch?v=en6LguPJdzM">Watch on YouTube <span aria-hidden="true">↗</span></a>
+          <a class="video-link" href="lines-lines-lines/">Watch the Loft Space performance <span aria-hidden="true">↗</span></a>
         </header>
         <div class="video-frame">
           <a class="video-poster" href="https://www.youtube.com/watch?v=en6LguPJdzM" data-video-id="en6LguPJdzM">
@@ -81,6 +91,33 @@
         </div>
       </div>
     </section>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-content">
+        <header class="video-heading">
+          <h2 id="contact-title">Contact</h2>
+          <p>For bookings, include the date and venue if you have them.</p>
+        </header>
+        <form class="booking-form" action="https://formspree.io/f/xljbwdea" method="post">
+          <label>Your name <input name="name" autocomplete="name" required maxlength="100"></label>
+          <label>Your email <input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+          <label class="booking-wide">Message <textarea name="message" rows="5" required maxlength="3000"></textarea></label>
+          <div hidden><label>Leave this blank <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+          <div class="booking-wide">
+            <button type="submit">Send enquiry <span aria-hidden="true">↗</span></button>
+            <p class="booking-status" role="status"></p>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
+  <footer class="site-footer">
+    <p><strong>BACKSHOT</strong> <span>Sheffield, UK</span></p>
+    <nav aria-label="Footer">
+      <a href="#contact">Bookings</a>
+      <a href="https://www.instagram.com/backshot_the_band/">Instagram</a>
+      <a href="https://www.facebook.com/people/Backshot/61592660761122/">Facebook</a>
+      <a href="https://www.youtube.com/@backshot-band">YouTube</a>
+    </nav>
+  </footer>
 </body>
 </html>
